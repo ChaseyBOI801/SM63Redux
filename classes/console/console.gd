@@ -96,19 +96,15 @@ func run_command(cmd: String):
 					Singleton.log_msg("Set HP to %d." % val)
 			"designer", "ld":
 				Singleton.log_msg("Entered Level Designer.")
-				# warning-ignore:RETURN_VALUE_DISCARDED
 				get_tree().change_scene("res://scenes/menus/level_designer/level_designer.tscn")
 			"menu":
 				Singleton.log_msg("Warped to menu.")
-				# warning-ignore:RETURN_VALUE_DISCARDED
 				get_tree().change_scene("res://scenes/menus/title/main_menu/main_menu.tscn")
 			"title":
 				Singleton.log_msg("Warped to title.")
-				# warning-ignore:RETURN_VALUE_DISCARDED
 				get_tree().change_scene("res://scenes/menus/title/title.tscn")
 			"vps":
 				Singleton.log_msg("Entering VPS editor.")
-				# warning-ignore:return_value_discarded
 				get_tree().change_scene("res://scenes/menus/visual_pipescript/editor.tscn")
 			"fludd":
 				var player = $"/root/Main/Player"
